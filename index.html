@@ -14,7 +14,7 @@
     <form>
         <input type="text" required placeholder="Nome completo">
         <input type="email" required placeholder="e-mail">
-        <input type="number" required placeholder="Telefone">
+        <input id="tel" type="tel" required placeholder="Telefone">
         <input id="cpf" type="tel" required placeholder="CPF">
         <input id="cep" type="tel" required placeholder="CEP">
         <button>Enviar</button>
@@ -26,6 +26,7 @@
         $(document).ready(function(){
             $('#cpf').mask('000.000.000-00')
             $('#cep').mask('00000-000')
+            $('#tel').mask('(00) 00000-0000')
         })
     </script>
 
